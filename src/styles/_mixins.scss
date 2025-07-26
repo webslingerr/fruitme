@@ -1,0 +1,144 @@
+$screen-sm-min: 640px;
+$screen-md-min: 768px;
+$screen-lg-min: 1024px;
+$screen-xl-min: 1280px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin max-sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin max-md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin max-lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin max-xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin element-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin justify-content-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin align-items-start {
+  display: flex;
+  align-items: start;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@mixin container {
+  width: 100%;
+  max-width: rem(1280);
+  margin: 0 auto;
+  padding: 0 rem(32);
+}
+
+@mixin absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin title {
+  color: var(--black-white-black, #000);
+  font-size: rem(40);
+  font-style: normal;
+  font-weight: 600;
+  line-height: rem(48);
+  letter-spacing: -0.8px;
+  align-self: stretch;
+  max-width: rem(600);
+
+
+  @include max-md {
+    color: var(--Gray-600, #475467);
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: rem(32);
+  }
+
+  span {
+    background: var(--Gradient, linear-gradient(180deg, #3D5AFE 0%, #7C4DFF 121.03%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@mixin link {
+  color: #FFF;
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: rem(24);
+  margin-bottom: rem(8);
+}
+
+@mixin primaryBtn {
+  padding: rem(10) rem(16);
+  box-shadow: rgba(16, 24, 40, 0.05) 0 1px 2px 0;
+  border-radius: rem(8);
+  border: rem(1) solid rgb(208, 213, 221);
+  cursor: pointer;
+  color: #fff;
+  font-size: rem(16);
+  font-weight: 600;
+  background: #156fee;
+}

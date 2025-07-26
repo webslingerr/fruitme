@@ -1,0 +1,26 @@
+@import "src/styles/variables.scss";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.framerHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  max-height: rem(80);
+  height: rem(80);
+  @include element-center;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+

@@ -1,0 +1,99 @@
+.plan {
+  padding: 40px 20px;
+  background: #f8f9fa;
+
+  .header {
+    text-align: center;
+    margin-bottom: 32px;
+
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 300px)); // Fixed max width
+    justify-content: center; // This centers the grid columns
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    width: 100%; // Takes full width of grid column
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  .imageWrapper {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img.mainImage {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .cardContent {
+    padding: 16px;
+    border-top: 1px solid #eee;
+
+    .titleRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .cardDesc {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .description {
+        max-width: 200px;
+        font-size: 14px;
+        color: #444;
+        line-height: 1.4;
+      }
+
+      .price {
+        text-align: right;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        p {
+          margin: 0;
+        }
+
+        strong {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

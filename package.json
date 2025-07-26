@@ -1,0 +1,40 @@
+{
+  "name": "nextjs_template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "pre-commit": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/next-js": "^2.1.5",
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "clsx": "^2.0.0",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.19",
+    "framer-motion": "^10.16.1",
+    "i18next": "^25.3.2",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "i18next-http-backend": "^3.0.2",
+    "next": "13.4.19",
+    "next-i18next": "^15.4.2",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.50.1",
+    "react-i18next": "^15.6.1",
+    "react-scroll-parallax": "^3.4.5",
+    "react-select": "^5.10.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "sass": "^1.66.1"
+  }
+}
