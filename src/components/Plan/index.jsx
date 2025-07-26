@@ -30,7 +30,7 @@ export default function FruitBasketCards() {
                 <h4>{item.title}</h4>
               </div>
               <div className={styles.cardDesc}>
-                <p className={styles.description}>{item.description}</p>
+                <p className={styles.description}>{t("basketDesc")}</p>
                 <div className={styles.price}>
                   <p>
                     <strong>{item.price}</strong>

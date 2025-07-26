@@ -20,7 +20,7 @@ export function Banner() {
                   {t("bannerTitle")} <br />
                   {t("bannerSubtitle")}
                 </h3>
-                <p className={styles.text}>k
+                <p className={styles.text}>
                   {t("bannerDesc")}
                 </p>
                 <ul className={styles.list}>
