@@ -53,7 +53,7 @@ export default function HeaderContent() {
   return (
     <header className={styles.header}>
       <div className={styles.navbar}>
-        <div className={styles.leftSide}>
+        {/* <div className={styles.leftSide}>
           <Link href={"/"} className={styles.logoContainer}>
             <Image
               src="/images/logo.png"
@@ -64,7 +64,7 @@ export default function HeaderContent() {
               priority
             />
           </Link>
-        </div>
+        </div> */}
         <div className={styles.rightSide}>
           <Menu>
             <MenuButton
